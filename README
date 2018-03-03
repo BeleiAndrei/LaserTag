@@ -1,0 +1,32 @@
+Clasa Hashtable memoreaza numele si indexul fiecarui jucator.
+Indexul va indica pozitia fiecarui jucator in graficul Shootings si matricea index.
+Clasa Graph va fi folosita pentru realizarea graficului de senzori si de impuscaturi.
+Functia recursiva quickSort primeste ca parametrii clasamentul top_shooters/top_explorers precum si indexul de inceput si sfarsit al acestora si le sorteaza in functie de scoru.
+Functia alphabetica primeste ca parametru clasamentul top_shooters/top_explorers, matricea de nume index si dimensiunea vectorului si ordoneaza alfabetic persoanele cu acelasi scor.
+Functia aphabeticalFE este la fel ca cea de mai sus doar ca primeste inca un parametru inc, ce marcheaza inceputul, astfel incat se ordoneaza alfabetic doar persoanele care apar in top si se va apela numai pentru a ordona clasamentul top_fire_exchange.
+In main avem urmatoarele variabile
+	i(int) - iterator
+	j(int) - iterator
+	k(int) - iterator
+	ns(int) - nr de senzori
+	n(int) - nr de jucatori in prima echipa
+	m(int) - nr de jucatori in a doua echipa
+	sensor(int) - va retine numarul senzorului atins in momentul de fata
+	t(int) - numarul echipei
+	value(int) - valoare indexului returnata de hashtable
+	shootout(int) - retine Fire Exchange-ul dintre doi jucatori
+	top(int) - retine numarul de jucatori ce apar in top
+	score(int*) - retine scorul pentru fiecare echipa
+	poz(int*) - vector ce va retine pozitia fiecarui jucator
+	top_shooter(int**) - scorul si indexul fiecarui jucator in clasamentul Top Shooter
+	top_explorer(int**) - scorul si indexul fiecarui jucator in clasamentul Top Explorer
+	top_fire(int**) - scorul si indexul fiecarui jucator in clasamentul Top Fire Exchange
+	vis(int**) - senzorii vizitati de fiecare jucator
+	alive(int*) - numarul de vieti pentru fiecare jucator
+	input(char*) - folosit pentru citirea input-ului
+	pointer(char*) - folosit pentru citirea input-ului; pointer returnat de strtok_r
+	target(char*) - tinta unui jucator
+	saveptr(char*) - parametru pentru strtok_r
+	index(char**) - memoreaza numele fiecarui jucator; folosit pentru extragerea numelui fiind dat indexul
+	WC(double*) - folosit pentru calcului Winning chance-ului
+	
